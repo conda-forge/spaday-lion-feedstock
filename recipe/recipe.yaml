@@ -1,5 +1,5 @@
 context:
-  version: "0.2.0"
+  version: "0.3.0"
 
 package:
   name: spaday-lion
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/s/spaday-lion/spaday_lion-${{ version }}.tar.gz
-  sha256: 85e435dde9631fc724227827985f62a239daf5b57973d61e676fdbef3296c471
+  sha256: 9a9b0637de8e76c63369a5efd13f831eb279f122bc8738c7b00105b2341b42cc
 
 build:
   number: 0
@@ -26,7 +26,7 @@ requirements:
     - hatch-js
   run:
     - python >=${{ python_min }}
-    - spaday >=0.10.0,<1
+    - spaday >=0.11.1,<1.0
 
 tests:
   - python:
